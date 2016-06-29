@@ -1,0 +1,27 @@
+<script type="text/javascript">
+  ShopifyApp.ready(function(){
+    ShopifyApp.Bar.initialize({
+        icon: '<%= "#{base_url}/icon.png" %>',
+        buttons: {
+            secondary: [
+                {
+                    label: "Help",
+                    type: "dropdown",
+                    links: [
+                        { label: 
+                            "Quick start", 
+                            href: "https://uploadcare.com/quick_start/", 
+                            target: "_blank" 
+                        },
+                        { 
+                            label: "Documentation", 
+                            href: "https://uploadcare.com/documentation/", 
+                            target: "_blank" 
+                        }
+                    ]
+                }
+            ]
+        }
+    });
+  });
+</script>

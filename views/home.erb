@@ -1,0 +1,49 @@
+<h3>Uploadcare File Uploader</h3>
+<p><span class="text-muted">by</span> <a href="//uploadcare.com" target="_blank">uploadcare</a></p>
+<p class="lead">Easily upload files from your computer and other sources.</p>
+<p>
+    Uploadcare file uploader allows your form users to easily upload files directly from multiple sources. Form users can pick files from their computer, from any URL, Facebook, Instagram, VK, Dropbox, Google Drive, Skydrive, Box, Evernote among others.The widget handles any file type: images, docs, videos, and any file size up to 5 TB.
+</p>
+
+<hr>
+
+<h3>Install Instructions</h3>
+
+<hr>
+
+<p class="lead text-muted">STEP 1</p>
+<h4>
+  Copy the widget code snippet
+</h4>
+<pre>
+&lt;script&gt;
+  // Widget settings
+  UPLOADCARE_PUBLIC_KEY = 'your_public_key';
+&lt;/script&gt;
+&lt;script src="https://ucarecdn.com/widget/2.9.0/uploadcare/uploadcare.full.min.js" charset="utf-8"&gt;&lt;/script&gt;</pre>
+
+<hr>
+
+<p class="lead text-muted">STEP 2</p>
+<h4>
+  Paste the widget code snippet in your theme
+</h4>
+<p>
+    <a href=<%="#{current_shop_url}/admin/themes/#{@theme_id}?key=layout/theme.liquid"%> target="_blank">
+        Open your templates/theme.liquid file</a>.
+</p>
+<p>
+  In the template, paste the code snippet inside <code>&lt;head&gt;</code> tag and then save your theme.
+</p>
+
+
+<hr/>
+
+<p class="lead text-muted">STEP 3</p>
+<h4>
+  Copy and paste the widget input tag in your template, for example inside <a href=<%="#{current_shop_url}/admin/themes/#{@theme_id}?key=templates/page.contact.liquid"%> target="_blank">
+      contact form</a>
+</h4>
+<pre>&lt;input type="hidden" role="uploadcare-uploader" name="contact[file]" /&gt;</pre>
+
+<hr/>
